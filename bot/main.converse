@@ -1,0 +1,8 @@
+@Intent('conversion', [
+    'Can you convert 15km to miles'
+])
+toMiles() {
+    km = :intent.distance.value
+    mile = km * 0.621371
+    > ok, that is { mile } miles
+}
